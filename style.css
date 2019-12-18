@@ -1,0 +1,68 @@
+#name {
+  color:orange;
+}
+#subject{
+  border:2px solid gray;
+}
+#subject .intro{
+  text-align: center;
+}
+#grid{
+  display: grid;
+  grid-template-columns:200px 1fr;
+  border-bottom: 2px solid gray;
+}
+#menu{
+  border-right:2px solid gray;
+  border-left:2px solid gray;
+  padding-right: 15px;
+}
+#grid div ul{
+  padding-left=0;
+}
+#content{
+  padding-top:1px;
+  border-right : 2px solid gray;
+}
+
+#outline{
+  border-left:2px solid gray;
+  border-right:2px solid gray;
+  border-bottom:2px solid gray;
+}
+#introment{
+  padding-top:20px;
+  padding-left:20px;
+}
+#imgCtr{
+  text-align:center;
+}
+#endment{
+  padding-left:20px;
+  padding-bottom:20px;
+}
+#lining{
+  padding-top:1px;
+  padding-right:20px;
+  padding-left:20px;
+  padding-bottom:20px;
+  border-left:2px solid gray;
+  border-right:2px solid gray;
+  border-bottom:2px solid gray;
+}
+
+@media(max-width:700px) {
+  #menu {
+    display:none;
+  }
+  #content{
+    border-right:2px solid gray;
+    border-left:2px solid gray;
+  }
+  #grid{
+    display: block;
+  }
+
+
+
+}
