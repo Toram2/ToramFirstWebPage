@@ -4,21 +4,24 @@
   <title>ToramHTML</title>
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="color.js"></script>
 </head>
 
 <body>
   <div id = "subject">
-    <h1 class = "intro">Studying <a href="1.html" style="font-size:200%;" id="name">HTML!</a></h1>
+    <h1 class = "intro">Studying <a href="1.html" style="font-size:200%;" id="name">&lt;HTML!&gt;</a></h1>
     <h5 class = "intro">세상에 대한 비유이자 은유의 예술인 컴퓨터 공학 중 웹에 대해 배워보자.</h5>
   </div>
 
   <div id="grid">
     <div id = "menu" style="padding-left :5px;padding-top:10px;">
-      <input type="button" value="night mode" onclick="document.querySelector('body').style.backgroundColor = 'black';
-      document.querySelector('body').style.color='white';" style="margin-bottom:10px; margin-left:10px;">
-      <input type="button" value="day mode" onclick="document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';">
-      <input type="text" value=" 검색어를 입력하세요. " style="margin-left:10px;">
+      <input type="button" value="nightmode" onclick="object.nightModeHandler(this);" style="margin-left:10px; margin-bottom:5px;"
+      >
+
+      <input type="text" value=" 검색어를 입력하세요." onkeydown="
+      alert('아직 준비 중인 기능이에요~!\n조금만 기다려주세요^^ㄱ')
+      " style="margin-left:10px;">
       <ul style="padding-left : 25px;">
         <li>Tag <></li>
         <li>문장들이 모여 구조를 이룬다!</li>
